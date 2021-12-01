@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:poke_app/view/home_view.dart';
 
 void main() {
-  runApp(Pokedex());
+  runApp(const Pokedex());
 }
 
 class Pokedex extends StatelessWidget {

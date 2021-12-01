@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:poke_app/view/detalles_view.dart';
-import 'package:transparent_image/transparent_image.dart';
+
 
 
 class HomeScreen extends StatefulWidget {
