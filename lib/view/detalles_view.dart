@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:poke_app/view/acerca_view.dart';
 import 'package:poke_app/view/tapbar_view.dart';
 
 class PokemonDetallesView extends StatefulWidget {
@@ -28,9 +29,11 @@ class _PokemonDetallesViewState extends State<PokemonDetallesView> with TickerPr
   }
   @override
   Widget build(BuildContext context) {
+ var huevo = widget.pokemonDetalles['egg'];
     var width = MediaQuery.of(context).size.width;
 var height = MediaQuery.of(context).size.height; 
     return DefaultTabController(
+      
       length: 4,
       child: Scaffold(
         backgroundColor: widget.color,
@@ -101,7 +104,7 @@ var height = MediaQuery.of(context).size.height;
                   color: Colors.white
                 ), 
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
+               
                   children: [
                     const SizedBox(height: 30),
                     Row(
@@ -110,16 +113,181 @@ var height = MediaQuery.of(context).size.height;
                       TapBar(),                     
                     ],
                     ),
-                    const Expanded(
-                      child: TabBarView(
-                        children: [
-                                  Text('holaaa'),
-                                  Text('Soy Isaac'),
-                                  Text('LOPEZ'),
-                                  Text('LOPEZZZZ')
-                                ],
+                     Expanded(
+                             child: TabBarView(
+                          
+                          children: [
+                           
+                                   Column(                                   
+                                     children: [                                     
+                                       Column(
+                                         children: [
+                                           SizedBox(height: 50,),
+                                             Row(
+                                           children:  [
+                                             const Text(' Nombre:',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                            
+                                             SizedBox(width: width * 0.15,),
+                                             Text(widget.pokemonDetalles['name'],                                     
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),)
+                                           ],
+                                         ),
+                                         Column(
+                                           children: [
+                                             SizedBox(height: height * 0.03,),
+                                              Row(                                            
+                                               children:  [
+                                                 const Text('  Peso:',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                             SizedBox(width: width * 0.15),
+                                             Text(widget.pokemonDetalles['weight'],                                     
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),)
+                                             
+                                               ],
+                                             ),
+                                              Column(
+                                           children: [
+                                             SizedBox(height: height * 0.03,),
+                                              Row(                                            
+                                               children:  [
+                                                 const Text('  Altura:',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                             SizedBox(width: width * 0.15),
+                                             Text(widget.pokemonDetalles['height'],                                     
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),)
+                                             
+                                               ],
+                                             ),
+                                             Column(
+                                               
+                                           children: [
+                                             SizedBox(height: height * 0.03,),
+                                              Row(     
+                                                                                      
+                                               children:  [
+                                                 
+                                                 const Text('Egg Pokemon Go:',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                             SizedBox(width: width * 0.04),
+                           huevo == '2 km' ?  Image.asset('assets/huevo2km.png',   height: 50, width: 50,
+                                             ) : huevo == '5 km' ? Image.asset('assets/huevo5km.png',   height: 50, width: 50,
+                                             ) : 
+                                              
+                                            SizedBox(width: width *0.01,),
+                                             Text(widget.pokemonDetalles['egg'],                                     
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),)
+                                             
+                                               ],
+                                             ),
+                                             Column(
+                                           children: [
+                                             SizedBox(height: height * 0.03,),
+                                              Row(                                            
+                                               children:  [
+                                                 const Text('Caramelos para evolucionar :',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                             SizedBox(width: width * 0.03),
+                                             
+                                             Image.asset('assets/candy.png',
+                                           height: 50,
+                                           width: 50,
+                                           ),
+                                            SizedBox(width: width *0.01,),
+                                             Text(widget.pokemonDetalles['candy_count'].toString(),
+                                                                               
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),),                                          
+                                               ],
+                                             ),
+                                              Column(
+                                           children: [
+                                             SizedBox(height: height * 0.03,),
+                                              Row(                                            
+                                               children:  [
+                                                 const Text('Avg spawns :',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                             SizedBox(width: width * 0.03),                                          
+                                            SizedBox(width: width *0.01,),
+                                             Text(widget.pokemonDetalles['avg_spawns'].toString(),
+                                                                               
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),),                                          
+                                               ],
+                                             ),
+                                             Column(
+                                           children: [
+                                             SizedBox(height: height * 0.03,),
+                                              Row(                                            
+                                               children:  [
+                                                 const Text('Spaw Chance :',
+                                             style: TextStyle(
+                                               color: Colors.blueGrey, fontSize: 18
+                                             ),),
+                                             SizedBox(width: width * 0.03),                                          
+                                            SizedBox(width: width *0.01,),
+                                             Text(widget.pokemonDetalles['spawn_chance'].toString(),
+                                                                               
+                                           style: const TextStyle(
+                                             color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold
+                                           ),),                                          
+                                               ],
+                                             ),
+                                             
+                                           ],
+                                         ),
+                                         
+                                             
+                                           ],
+                                         )
+                                             
+                                           ],
+                                         )
+                                             
+                                           ],
+                                         )
+                                           ],
+                                         )
+                                           ],
+                                         )
+                      
+                                         ],
+                                       
+                                       ),
+                                       
+                                     ],
+                                    
+                                   ),
+                                    Text('Soy Isaac'),
+                                    Text('LOPEZ'),
+                                    Text('LOPEZZZZ')
+                                  ],
+                        ),
                       ),
-                    )
+                    
+                  
                   ],
                 ),      
               ),
