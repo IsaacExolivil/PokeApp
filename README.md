@@ -1,6 +1,6 @@
 # Pokedex App
 
-Construida en Flutter, Aplicación de pokdex con los 150 pokemones conectada con un api, mostrando algunos datos como avg chance, caramelos para evolucionar e.t.c, para información de pokemon go
+Construida en Flutter, Aplicación de pokedex con los 150 pokemones conectada con un api, mostrando algunos datos como avg chance, caramelos para evolucionar e.t.c, para información de pokemon go
 
 
 
