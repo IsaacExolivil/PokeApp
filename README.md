@@ -1,16 +1,33 @@
-# poke_app
+# Pokedex App
 
-A new Flutter project.
+Construida en Flutter, Aplicación de pokdex con los 150 pokemones conectada con un api, mostrando algunos datos como avg chance, caramelos para evolucionar e.t.c, para información de pokemon go
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<!-- ABOUT THE PROJECT -->
+## Proyecto
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](https://github.com/IsaacExolivil/PokeApp/blob/main/lib/screens/Captura%20de%20Pantalla%202021-12-03%20a%20la(s)%200.50.01.png)
+
+![alt text](https://github.com/IsaacExolivil/PokeApp/blob/main/lib/screens/Captura%20de%20Pantalla%202021-12-03%20a%20la(s)%200.50.35.png)
+
+![alt text](https://github.com/IsaacExolivil/PokeApp/blob/main/lib/screens/Captura%20de%20Pantalla%202021-12-03%20a%20la(s)%200.50.50.png)
+
+
+
+
+
+
+### Construida con
+
+
+
+* [Flutter](https://flutter.dev/)
+* [Dart](https://dart.dev/)
+* [PokeApi](https://pokeapi.co/)
+
+
+
+
+
